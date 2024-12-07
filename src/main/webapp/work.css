@@ -1,0 +1,109 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+  }
+  
+  /* Our Latest Work Section */
+  .latest-work {
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    padding: 40px 20px;
+  }
+  
+  .latest-work h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .latest-work-gallery {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .work-item {
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .work-item span {
+    .work-item span {
+        position: absolute;
+        bottom: 10px; /* Positioning the text towards the bottom */
+        left: 50%; /* Center horizontally */
+        transform: translateX(-50%); /* Adjust alignment */
+        background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+        color: #fff; /* White text color */
+        padding: 7px 15px; /* Padding around the text */
+        font-size: 7 rem; /* Adjust font size */
+        font-weight: bold; /* Bold text */
+        text-transform: uppercase; /* Uppercase text */
+        letter-spacing: 2px; /* Add spacing between letters */
+        border-radius: 5px; /* Rounded corners */
+      }
+      
+  }
+  
+  /* Featured Works Section */
+  .featured-works {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .featured-works h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .featured-works-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .featured-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    max-width: calc(33% - 20px);
+  }
+  
+  .featured-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .featured-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .featured-item p {
+    font-size: 1rem;
+    color: #555;
+  }
+  

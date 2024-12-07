@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <link rel="stylesheet" href="about.css">
+</head>
+<body>
+  <section class="about-me-section">
+    <h2>About Me</h2>
+    <div class="about-me-container">
+      <div class="profile-image">
+        <img src="im%203.png" alt="Christopher Lucifer">
+      </div>
+      <div class="about-me-content">
+        <h3>Christopher Lucifer</h3>
+        <p>
+          Renowned for his breathtaking black-and-white landscape photography of the American West, Ansel Adams was not only a master of capturing the beauty of nature but also a pioneer in photographic technique. His iconic images, such as "Moonrise, Hernandez, New Mexico" and "The Tetons and the Snake River," continue to inspire photographers and nature enthusiasts alike.
+        </p>
+
+        <div class="stats">
+          <div class="stat">
+            <h4>Photography Works</h4>
+            <p class="counter" data-target="250">0</p>
+          </div>
+          <div class="stat">
+            <h4>Experience</h4>
+            <p class="counter" data-target="6">0</p>
+          </div>
+          <div class="stat">
+            <h4>Article Featured</h4>
+            <p class="counter" data-target="10">0</p>
+          </div>
+          <div class="stat">
+            <h4>Awards Received</h4>
+            <p class="counter" data-target="4">0</p>
+          </div>
+        </div>
+        <script>
+        
+  const counters = document.querySelectorAll('.counter');
+  const speed = 100; // Adjust speed (lower value = faster)
+
+  counters.forEach(counter => {
+    const updateCount = () => {
+      const target = +counter.getAttribute('data-target'); // Target value
+      const count = +counter.innerText; // Current value
+      const increment = Math.ceil(target / speed); // Value to increment
+
+      if (count < target) {
+        counter.innerText = count + increment;
+        setTimeout(updateCount, 50); // Update every 20ms
+      } else {
+        counter.innerText = target; // Final value
+      }
+    };
+
+    updateCount();
+  });
+</script>
+
+       </body>
+</html>
